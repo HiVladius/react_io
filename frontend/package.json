@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "CI=false npm install --prefix frontend && run build --prefix fontend",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "serve dist -s -n -L -p $PORT"
+    
   },
   "dependencies": {
     "react": "^18.2.0",
